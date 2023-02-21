@@ -5,12 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PassGen"
         mc:Ignorable="d"
-        Title="PassGen 1.0.0" Height="250" Width="400">
+        Title="PassGen 1.0.1" Height="240" Width="330">
     <Grid>
-        <Label x:Name="pl" Content="Password length:" Margin="33,28,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" IsEnabled="False" Height="29"/>
-        <TextBox Text="{Binding ElementName=slValue, Path=Value, UpdateSourceTrigger=PropertyChanged}" Width="33" DockPanel.Dock="Right" HorizontalAlignment="Left" IsEnabled="False" VerticalAlignment="Top" Margin="138,62,0,0" />
-        <Slider Maximum="25"  TickFrequency="1" IsSnapToTickEnabled="True" x:Name="slValue" Minimum="8" DockPanel.Dock="Left" Width="100" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="33,62,0,0"/>
-        <Button x:Name="commit_btn" Content="Generate Password" HorizontalAlignment="Left" Margin="33,93,0,0" VerticalAlignment="Top" Click="Button_Click"/>
-        <TextBox x:Name="output_text_block" HorizontalAlignment="Left" Margin="33,130,0,20" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="True" Width="200"/>
+        <Label x:Name="pl" Content="Password length:" Margin="33,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" IsEnabled="False" Height="29"/>
+        <TextBox Text="{Binding ElementName=slValue, Path=Value, UpdateSourceTrigger=PropertyChanged}" Width="33" DockPanel.Dock="Right" HorizontalAlignment="Left" IsEnabled="False" VerticalAlignment="Top" Margin="188,44,0,0" />
+        <Slider Maximum="35"  TickFrequency="1" IsSnapToTickEnabled="True" x:Name="slValue" Minimum="8" DockPanel.Dock="Left" Width="150" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="33,44,0,0"/>
+        <Button x:Name="commit_btn" Content=" Generate Password " HorizontalAlignment="Left" Margin="33,125,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <TextBox x:Name="output_text_block" HorizontalAlignment="Left" Margin="33,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="True" Width="250"/>
+        <CheckBox x:Name="capital_letters" Content="ABC" HorizontalAlignment="Left" Margin="33,98,0,0" VerticalAlignment="Top" IsChecked="False" Unchecked="capital_letters_Unchecked" Checked="capital_letters_Checked" />
+        <CheckBox x:Name="small_letters" Content="abc" HorizontalAlignment="Left" Margin="80,98,0,0" VerticalAlignment="Top" IsChecked="False" Checked="small_letters_Checked" Unchecked="small_letters_Checked"/>
+        <CheckBox x:Name="numbers" Content="123" HorizontalAlignment="Left" Margin="124,98,0,0" VerticalAlignment="Top" IsChecked="False" Checked="numbers_Checked" Unchecked="numbers_Checked"/>
+        <CheckBox x:Name="special_characters" Content="@#$" HorizontalAlignment="Left" Margin="168,98,0,0" VerticalAlignment="Top" IsChecked="False" Checked="special_characters_Checked" Unchecked="special_characters_Checked"/>
+        <Label Content="Allowed Characters:" HorizontalAlignment="Left" Margin="33,67,0,0" VerticalAlignment="Top" IsEnabled="False"/>
     </Grid>
 </Window>
