@@ -88,24 +88,5 @@ namespace PassGen
         {
             Lock_Option_If_Only_Active();
         }
-        private void capital_letters_Unchecked(object sender, RoutedEventArgs e)
-        {
-            Lock_Option_If_Only_Active();
-        }
-
-        private void small_letters_Unchecked(object sender, RoutedEventArgs e)
-        {
-            Lock_Option_If_Only_Active();
-        }
-
-        private void numbers_Unchecked(object sender, RoutedEventArgs e)
-        {
-            Lock_Option_If_Only_Active();
-        }
-
-        private void special_characters_Unchecked(object sender, RoutedEventArgs e)
-        {
-            Lock_Option_If_Only_Active();
-        }
     }
 }

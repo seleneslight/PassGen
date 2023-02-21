@@ -13,9 +13,9 @@
         <Button x:Name="commit_btn" Content=" Generate Password " HorizontalAlignment="Left" Margin="33,125,0,0" VerticalAlignment="Top" Click="Button_Click"/>
         <TextBox x:Name="output_text_block" HorizontalAlignment="Left" Margin="33,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="True" Width="250"/>
         <CheckBox x:Name="capital_letters" Content="ABC" HorizontalAlignment="Left" Margin="33,98,0,0" VerticalAlignment="Top" IsChecked="False" Unchecked="capital_letters_Unchecked" Checked="capital_letters_Checked" />
-        <CheckBox x:Name="small_letters" Content="abc" HorizontalAlignment="Left" Margin="80,98,0,0" VerticalAlignment="Top" IsChecked="False" Checked="small_letters_Checked" Unchecked="small_letters_Unchecked"/>
-        <CheckBox x:Name="numbers" Content="123" HorizontalAlignment="Left" Margin="124,98,0,0" VerticalAlignment="Top" IsChecked="False" Checked="numbers_Checked" Unchecked="numbers_Unchecked"/>
-        <CheckBox x:Name="special_characters" Content="@#$" HorizontalAlignment="Left" Margin="168,98,0,0" VerticalAlignment="Top" IsChecked="False" Checked="special_characters_Checked" Unchecked="special_characters_Unchecked"/>
+        <CheckBox x:Name="small_letters" Content="abc" HorizontalAlignment="Left" Margin="80,98,0,0" VerticalAlignment="Top" IsChecked="False" Checked="small_letters_Checked" Unchecked="small_letters_Checked"/>
+        <CheckBox x:Name="numbers" Content="123" HorizontalAlignment="Left" Margin="124,98,0,0" VerticalAlignment="Top" IsChecked="False" Checked="numbers_Checked" Unchecked="numbers_Checked"/>
+        <CheckBox x:Name="special_characters" Content="@#$" HorizontalAlignment="Left" Margin="168,98,0,0" VerticalAlignment="Top" IsChecked="False" Checked="special_characters_Checked" Unchecked="special_characters_Checked"/>
         <Label Content="Allowed Characters:" HorizontalAlignment="Left" Margin="33,67,0,0" VerticalAlignment="Top" IsEnabled="False"/>
     </Grid>
 </Window>
