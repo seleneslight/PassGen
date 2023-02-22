@@ -8,7 +8,6 @@ namespace PassGen
 {
     class PasswordGenerator
     {
-        //
         public string generatePassword(int passLength, string allowedCharacters)
         {
             StringBuilder pass = new StringBuilder();

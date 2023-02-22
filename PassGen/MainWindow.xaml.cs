@@ -33,10 +33,6 @@ namespace PassGen
             
         }
 
-        public static async Task AddDelayExample()
-        {
-
-        }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             if (small_letters.IsChecked == true) allowedCharacters.Append("abcdefghijklmnoprstuwxyz");
